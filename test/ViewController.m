@@ -30,6 +30,10 @@
         make.height.mas_equalTo(20);
     }];
     lable.text = @"adsaldaslda";
+    
+    
+
+    
 }
 
 
