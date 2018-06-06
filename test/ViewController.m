@@ -18,6 +18,18 @@
     [super viewDidLoad];
     NSLog(@"asdasdasdasd");
     NSLog(@"新分支");
+   UIView *view = [UIView xb_viewWithBackColor:[UIColor redColor] supView:self.view constraints:^(MASConstraintMaker *make) {
+        make.centerX.centerY.equalTo(self.view);
+        make.width.height.mas_equalTo(50);
+    }];
+    
+    
+    UILabel *lable = [UILabel xb_labelWithFontSize:13 textColor:[UIColor greenColor] superView:self.view constraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(view.mas_right).offset(20);
+        make.centerY.equalTo(view.mas_centerY);
+        make.height.mas_equalTo(20);
+    }];
+    lable.text = @"adsaldaslda";
 }
 
 
